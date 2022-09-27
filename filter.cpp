@@ -16,11 +16,12 @@ int main() {
    int index = 0;
    int temp = 0;
 
-   while(temp < sentence.length() && i < details.length()){
-    temp += details.at(i)-48;
+   while(temp <= sentence.length() && i < details.length()){
+    temp = details.at(i)-48;
     cout << sentence.substr(index, temp) << " ";
     i++;
-    index = temp;
+    index += temp;
+    //temp++;
    }
    
 
