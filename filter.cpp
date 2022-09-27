@@ -21,7 +21,6 @@ int main() {
     cout << sentence.substr(index, temp) << " ";
     i++;
     index += temp;
-    //temp++;
    }
    
 
